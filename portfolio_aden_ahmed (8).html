@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Aden Ahmed Aden</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      color: #333;
+    }
+
+    header {
+      background-color: #1f1f2e;
+      padding: 1rem 2rem;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+    }
+
+    .hero .image-wrapper {
+      width: 380px;
+      height: 500px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 6px solid #ffcc00;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+    }
+
+    .hero .image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background: #ffcc00;
+      color: #1f1f2e;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ffdd33;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #222;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #ffcc00;
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .skills li {
+      background: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-weight: 600;
+    }
+
+    .projects .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background: #1f1f2e;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Aden Ahmed</div>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="image-wrapper">
+      <img src="https://zupimages.net/up/25/24/cvpf.jpg" alt="Photo de Aden Ahmed">
+    </div>
+    <h1>Salut, je suis Aden Ahmed Aden</h1>
+    <p>Développeur Web & Ingénieur Logiciel Freelance</p>
+    <a href="#contact" class="btn">Me Contacter</a>
+  </section>
+
+  <section id="about">
+    <h2>À propos de moi</h2>
+    <p style="text-align:center; max-width: 800px; margin:auto; font-size: 1.1rem;">Diplômé en Génie Logiciel, passionné par le développement web et mobile. J'aime créer des expériences numériques élégantes, performantes et utiles. Je travaille également sur Upwork pour des projets freelance à travers le monde.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Compétences</h2>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+      <li>React.js / Node.js</li>
+      <li>Responsive Design</li>
+      <li>Développement Fullstack</li>
+      <li>Méthodes Agile / Scrum</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projets</h2>
+    <div class="project">
+      <h3>Boutique en ligne</h3>
+      <p>Développement complet d’une boutique e-commerce avec interface utilisateur moderne, panier interactif, espace admin et système de paiement intégré.</p>
+    </div>
+    <div class="project">
+      <h3>Plateforme de loisirs</h3>
+      <p>Concept d’un espace digital combinant visionnage de films, jeux vidéo, espace barbecue et détente, conçu pour la communauté locale.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center">Email : <a href="mailto:edenlefaahmed@gmail.com">edenlefaahmed@gmail.com</a></p>
+    <p style="text-align:center">Téléphone : <a href="tel:+25377614248">+253 77 61 42 48</a></p>
+    <div style="text-align:center">
+      <a href="https://www.upwork.com/freelancers/~yourprofile" class="btn" target="_blank">Voir mon profil Upwork</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aden Ahmed Aden - Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
